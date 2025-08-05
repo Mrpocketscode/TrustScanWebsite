@@ -1,28 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Friendship Forever</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Trust Scan - Scam Checker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>💛 Welcome to Friendship Forever 💛</h1>
-    <p class="tagline">Celebrate your friends and spread some love!</p>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Trust Scan Logo" />
+      <h1>Trust Scan</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#coins">Trust Coins</a></li>
+        <li><a href="#contact">Support</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <form id="friend-form">
-      <input type="text" id="nameInput" placeholder="Your friend's name" required />
-      <textarea id="noteInput" placeholder="Write a short note..." required></textarea>
-      <button type="submit">Send Note</button>
-    </form>
+  <section class="hero">
+    <div class="hero-content">
+      <img src="assets/mascot-flexing.png" alt="Trust Scan Mascot" class="mascot" />
+      <h2>Scan Smarter. Stay Safer.</h2>
+      <p>Check emails, phone numbers, and websites for scams in seconds.</p>
+      <a href="#about" class="cta">Learn More</a>
+    </div>
+  </section>
 
-    <div id="message"></div>
+  <section class="about" id="about">
+    <h2>What is Trust Scan?</h2>
+    <p>Trust Scan is a scam checker that empowers users to verify emails, numbers, and domains using real-time trust scoring. No tech knowledge required. Just scan and stay protected.</p>
+  </section>
 
-    <button id="quoteBtn">🌈 Show a Friendship Quote</button>
-    <p id="quoteDisplay"></p>
-  </div>
+  <section class="features" id="features">
+    <h2>Why Use Trust Scan?</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <img src="assets/mascot-camera.png" alt="Feature 1" />
+        <h3>Simple</h3>
+        <p>One click checks with instant feedback.</p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/mascot-disclaimer.png" alt="Feature 2" />
+        <h3>Accurate</h3>
+        <p>Real trust scores powered by verified data.</p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/mascot-support.png" alt="Feature 3" />
+        <h3>Human Support</h3>
+        <p>Got a question? Our team’s got your back.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-coins" id="coins">
+    <h2>🏅 Earn Trust Coins</h2>
+    <img src="assets/trust-coin.png" alt="Trust Coin" class="coin-image"/>
+    <p>Earn Trust Coins daily by scanning safely. Redeem 200 for 1 month of Premium access.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Need Help?</h2>
+    <p>Email us at <a href="mailto:support@trustscanapp.com">support@trustscanapp.com</a> or message us in the app.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Trust Scan. Stay safe online. | <a href="#disclaimer">Disclaimer</a></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
