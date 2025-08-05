@@ -262,3 +262,18 @@ footer a:hover {
     display: flex;
   }
 }
+/* Appear animation */
+.appear {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+  transition: all 0.8s ease;
+}
+
+.feature-box,
+.hero-content,
+.about,
+.trust-coins,
+.contact {
+  opacity: 0;
+  transform: translateY(20px);
+}
