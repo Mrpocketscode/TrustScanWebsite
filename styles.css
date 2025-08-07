@@ -82,6 +82,13 @@ img {
   margin-bottom: 1rem;
 }
 
+/* Fix mascot size for desktop */
+.coming-soon .mascot {
+  max-height: 180px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -322,6 +329,20 @@ footer a:hover {
     display: flex;
   }
 }
+
+/* Fix button spacing in hero section for mobile */
+@media (max-width: 600px) {
+  .hero .cta.app-link {
+    margin-bottom: 1rem;
+    margin-right: 0;
+    display: block;
+  }
+  .hero .cta {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* Appear animation */
 .appear {
   opacity: 1 !important;
