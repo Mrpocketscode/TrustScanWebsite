@@ -151,28 +151,28 @@ img {
   box-shadow: 0 6px 18px rgba(255,44,44,0.18);
 }
 
-/* App Link Button Style - More Professional & Slightly Smaller */
+/* App Link Button Style - Clean and Visible */
 .app-link {
   margin: 0.5rem 0.5rem 0 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: 'Poppins', 'Noto Sans', sans-serif;
-  background: linear-gradient(90deg, #FF2C2C 0%, #FF6B6B 100%);
+  background-color: #FF2C2C;
   color: #fff;
   border: none;
-  border-radius: 24px;
-  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 2px 12px rgba(255,44,44,0.12);
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.3s, transform 0.3s;
   display: inline-block;
   letter-spacing: 0.5px;
 }
 
 .app-link:hover {
-  background: linear-gradient(90deg, #e32222 0%, #ff4c4c 100%);
+  background-color: #e32222;
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 4px 16px rgba(255,44,44,0.18);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
 /* === About Section === */
