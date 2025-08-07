@@ -306,21 +306,25 @@ footer a:hover {
   padding: 5rem 2rem;
   text-align: center;
   min-height: 350px;
-  animation: fadeIn 1.5s;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .coming-soon-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1.5rem;
+  width: 100%;
+  animation: fadeInUp 1.5s;
 }
 
 .coming-soon .mascot {
   max-height: 180px;
   margin-bottom: 1rem;
-  animation: fadeIn 1.5s;
+  animation: fadeInUp 1.5s;
 }
 
 .coming-soon h2 {
@@ -329,7 +333,7 @@ footer a:hover {
   color: #fff;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  animation: fadeIn 1.5s;
+  animation: fadeInUp 1.5s;
 }
 
 .coming-soon-tag {
@@ -339,5 +343,11 @@ footer a:hover {
   font-weight: 600;
   margin-top: 0.5rem;
   letter-spacing: 2px;
-  animation: fadeIn 2s;
+  animation: fadeInUp 2s;
+}
+
+/* Fade in up animation for bottom section */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
 }
