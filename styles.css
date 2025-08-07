@@ -82,6 +82,13 @@ img {
   margin-bottom: 1rem;
 }
 
+/* Fix mascot size for desktop */
+.coming-soon .mascot {
+  max-height: 180px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -108,6 +115,66 @@ img {
   background-color: #e32222;
 }
 
+/* Restore and style CTA and App Link buttons */
+.cta,
+.app-link {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: 'Poppins', 'Noto Sans', sans-serif;
+  background: linear-gradient(90deg, #e32222 0%, #ff6b6b 100%);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 0.55rem 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(255,44,44,0.13);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  letter-spacing: 0.5px;
+  margin: 0.5rem 0.5rem 0 0;
+  opacity: 0;
+  transform: translateY(20px);
+  cursor: pointer;
+}
+
+.cta.appear,
+.app-link.appear {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s cubic-bezier(.77,0,.18,1);
+}
+
+.cta,
+.app-link {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: 'Poppins', 'Noto Sans', sans-serif;
+  background: linear-gradient(90deg, #e32222 0%, #ff6b6b 100%);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 0.55rem 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(255,44,44,0.13);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  letter-spacing: 0.5px;
+  margin: 0.5rem 0.5rem 0 0;
+  opacity: 1;
+  transform: none;
+  cursor: pointer;
+}
+  transition: background 0.3s, transform 0.3s;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.app-link:hover {
+  background-color: #e32222 !important;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
 /* === About Section === */
 .about {
   padding: 4rem 2rem;
@@ -122,29 +189,29 @@ img {
 
 .about p {
   max-width: 700px;
-  margin: 0 auto;
-  color: #ccc;
-}
-
-/* === Features Section === */
-.features {
-  padding: 4rem 2rem;
-  background-color: #2b2f66;
-  text-align: center;
-}
-
-.features h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.features-grid {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: 'Poppins', 'Noto Sans', sans-serif;
+  background: linear-gradient(90deg, #e32222 0%, #ff6b6b 100%);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 0.55rem 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(255,44,44,0.13);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  letter-spacing: 0.5px;
+  margin: 0.5rem 0.5rem 0 0;
+  opacity: 1;
+  transform: none;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
-}
-
+  background: linear-gradient(90deg, #c81c1c 0%, #ff4c4c 100%);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(255,44,44,0.18);
 .feature-box {
   background-color: #1f2250;
   border-radius: 10px;
@@ -174,9 +241,9 @@ img {
 
 /* === Trust Coins Section === */
 .trust-coins {
-  background: linear-gradient(135deg, #1f243c 80%, #2b2f66 100%);
-  padding: 4rem 2rem;
+  background-color: #222652;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
 .trust-coins h2 {
@@ -263,6 +330,19 @@ footer a:hover {
   }
 }
 
+/* Fix button spacing in hero section for mobile */
+@media (max-width: 600px) {
+  .hero .cta.app-link {
+    margin-bottom: 1rem;
+    margin-right: 0;
+    display: block;
+  }
+  .hero .cta {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* Appear animation */
 .appear {
   opacity: 1 !important;
@@ -279,48 +359,26 @@ footer a:hover {
   transform: translateY(20px);
 }
 
-/* App Link Button Style */
-.app-link {
-  margin: 0.5rem 0.5rem 0 0;
-  font-size: 1rem;
-  font-family: 'Poppins', 'Noto Sans', sans-serif;
-  background-color: #FF2C2C;
-  color: #fff;
-  border-radius: 8px;
-  padding: 0.7rem 1.3rem;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  transition: background 0.3s, transform 0.3s;
-  display: inline-block;
-  animation: fadeIn 1.2s;
-}
-
-.app-link:hover {
-  background-color: #e32222;
-  transform: translateY(-2px) scale(1.04);
-}
-
-/* Coming Soon Section */
+/* Coming Soon Section - Center Content */
 .coming-soon {
   background: linear-gradient(135deg, #23263a 80%, #2b2f66 100%);
-  padding: 5rem 2rem;
-  text-align: center;
+  padding: 6rem 2rem 3rem 2rem;
   min-height: 350px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .coming-soon-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1.5rem;
   width: 100%;
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -329,28 +387,12 @@ footer a:hover {
   transform: translateY(0);
 }
 
-/* Fix mascot size for desktop */
-.coming-soon .mascot {
-  max-height: 180px;
-  width: auto;
-  margin-bottom: 1rem;
-}
-
-/* Fix button spacing in hero section for mobile */
+/* Responsive: Center coming soon on mobile */
 @media (max-width: 600px) {
-  .hero .cta.app-link {
-    margin-bottom: 1rem;
-    margin-right: 0;
-    display: block;
+  .coming-soon {
+    padding: 4rem 1rem 2rem 1rem;
   }
-  .hero .cta {
-    display: block;
-    margin-bottom: 0.5rem;
+  .coming-soon-content {
+    gap: 1.2rem;
   }
-}
-
-/* Fade in up animation for bottom section */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px);}
-  to { opacity: 1; transform: translateY(0);}
 }
