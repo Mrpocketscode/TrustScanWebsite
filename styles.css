@@ -302,7 +302,7 @@ footer a:hover {
 
 /* Coming Soon Section */
 .coming-soon {
-  background: linear-gradient(to bottom, #1B1F57, #101334);
+  background: linear-gradient(to bottom, #1B1F57, #101334); /* Same as .trust-coins */
   padding: 5rem 2rem;
   text-align: center;
   min-height: 350px;
