@@ -144,26 +144,26 @@ img {
   transition: all 0.8s cubic-bezier(.77,0,.18,1);
 }
 
-.cta:hover,
-.app-link:hover {
-  background: linear-gradient(90deg, #c81c1c 0%, #ff4c4c 100%);
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 6px 18px rgba(255,44,44,0.18);
-}
-
-/* App Link Button Style - Ensure Visibility */
+.cta,
 .app-link {
-  margin: 0.5rem 0.5rem 0 0;
+  display: inline-block;
   font-size: 1rem;
   font-family: 'Poppins', 'Noto Sans', sans-serif;
-  background-color: #FF2C2C !important;
-  color: #fff !important;
+  background: linear-gradient(90deg, #e32222 0%, #ff6b6b 100%);
+  color: #fff;
   border: none;
-  border-radius: 8px;
-  padding: 0.6rem 1.2rem;
+  border-radius: 22px;
+  padding: 0.55rem 1.3rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 12px rgba(255,44,44,0.13);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  letter-spacing: 0.5px;
+  margin: 0.5rem 0.5rem 0 0;
+  opacity: 1;
+  transform: none;
+  cursor: pointer;
+}
   transition: background 0.3s, transform 0.3s;
   display: inline-block;
   letter-spacing: 0.5px;
@@ -377,8 +377,8 @@ footer a:hover {
   justify-content: center;
   gap: 1.5rem;
   width: 100%;
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
