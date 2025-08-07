@@ -277,3 +277,67 @@ footer a:hover {
   opacity: 0;
   transform: translateY(20px);
 }
+
+/* App Link Button Style */
+.app-link {
+  margin: 0.5rem 0.5rem 0 0;
+  font-size: 1rem;
+  font-family: 'Poppins', 'Noto Sans', sans-serif;
+  background-color: #FF2C2C;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.7rem 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: inline-block;
+  animation: fadeIn 1.2s;
+}
+
+.app-link:hover {
+  background-color: #e32222;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Coming Soon Section */
+.coming-soon {
+  background: linear-gradient(135deg, #1f243c 80%, #2b2f66 100%);
+  padding: 5rem 2rem;
+  text-align: center;
+  min-height: 350px;
+  animation: fadeIn 1.5s;
+}
+
+.coming-soon-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.coming-soon .mascot {
+  max-height: 180px;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.5s;
+}
+
+.coming-soon h2 {
+  font-size: 2.2rem;
+  font-family: 'Poppins', 'Noto Sans', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 1.5s;
+}
+
+.coming-soon-tag {
+  display: block;
+  font-size: 1.3rem;
+  color: #FF2C2C;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+  animation: fadeIn 2s;
+}
