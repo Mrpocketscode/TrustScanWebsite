@@ -302,7 +302,7 @@ footer a:hover {
 
 /* Coming Soon Section */
 .coming-soon {
-  background: linear-gradient(135deg, #1f243c 80%, #2b2f66 100%);
+  background: linear-gradient(to bottom, #1B1F57, #101334);
   padding: 5rem 2rem;
   text-align: center;
   min-height: 350px;
