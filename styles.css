@@ -302,7 +302,7 @@ footer a:hover {
 
 /* Coming Soon Section */
 .coming-soon {
-  background: linear-gradient(135deg, #1f243c 80%, #2b2f66 100%);
+  background: linear-gradient(135deg, #23263a 80%, #2b2f66 100%);
   padding: 5rem 2rem;
   text-align: center;
   min-height: 350px;
@@ -318,32 +318,21 @@ footer a:hover {
   justify-content: flex-end;
   gap: 1.5rem;
   width: 100%;
-  animation: fadeInUp 1.5s;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
 }
 
-.coming-soon .mascot {
-  max-height: 180px;
-  margin-bottom: 1rem;
-  animation: fadeInUp 1.5s;
+.coming-soon-content.appear {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+  transition: all 0.8s ease;
 }
 
-.coming-soon h2 {
-  font-size: 2.2rem;
-  font-family: 'Poppins', 'Noto Sans', sans-serif;
-  color: #fff;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  animation: fadeInUp 1.5s;
-}
-
+.coming-soon .mascot,
+.coming-soon h2,
 .coming-soon-tag {
-  display: block;
-  font-size: 1.3rem;
-  color: #FF2C2C;
-  font-weight: 600;
-  margin-top: 0.5rem;
-  letter-spacing: 2px;
-  animation: fadeInUp 2s;
+  animation: fadeIn 1.5s;
 }
 
 /* Fade in up animation for bottom section */
