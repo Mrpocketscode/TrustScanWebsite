@@ -151,13 +151,13 @@ img {
   box-shadow: 0 6px 18px rgba(255,44,44,0.18);
 }
 
-/* App Link Button Style - Clean and Visible */
+/* App Link Button Style - Ensure Visibility */
 .app-link {
   margin: 0.5rem 0.5rem 0 0;
   font-size: 1rem;
   font-family: 'Poppins', 'Noto Sans', sans-serif;
-  background-color: #FF2C2C;
-  color: #fff;
+  background-color: #FF2C2C !important;
+  color: #fff !important;
   border: none;
   border-radius: 8px;
   padding: 0.6rem 1.2rem;
@@ -170,7 +170,7 @@ img {
 }
 
 .app-link:hover {
-  background-color: #e32222;
+  background-color: #e32222 !important;
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
@@ -357,4 +357,42 @@ footer a:hover {
 .contact {
   opacity: 0;
   transform: translateY(20px);
+}
+
+/* Coming Soon Section - Center Content */
+.coming-soon {
+  background: linear-gradient(135deg, #23263a 80%, #2b2f66 100%);
+  padding: 5rem 2rem;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.coming-soon-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.coming-soon-content.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive: Center coming soon on mobile */
+@media (max-width: 600px) {
+  .coming-soon {
+    padding: 3rem 1rem;
+  }
+  .coming-soon-content {
+    gap: 1rem;
+  }
 }
