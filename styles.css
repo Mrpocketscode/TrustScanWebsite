@@ -174,9 +174,9 @@ img {
 
 /* === Trust Coins Section === */
 .trust-coins {
-  background-color: #222652;
-  text-align: center;
+  background: linear-gradient(135deg, #1f243c 80%, #2b2f66 100%);
   padding: 4rem 2rem;
+  text-align: center;
 }
 
 .trust-coins h2 {
@@ -302,7 +302,7 @@ footer a:hover {
 
 /* Coming Soon Section */
 .coming-soon {
-  background: linear-gradient(to bottom, #1B1F57, #101334); /* Same as .trust-coins */
+  background: linear-gradient(135deg, #1f243c 80%, #2b2f66 100%);
   padding: 5rem 2rem;
   text-align: center;
   min-height: 350px;
