@@ -1,5 +1,5 @@
 // === Smooth Scroll Fade-in Animation ===
-const faders = document.querySelectorAll('.feature-box, .hero-content, .about, .trust-coins, .contact');
+const faders = document.querySelectorAll('.feature-box, .hero-content, .about, .trust-coins, .contact, .coming-soon-content');
 
 const appearOptions = {
   threshold: 0.2,
