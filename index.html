@@ -4,140 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trust Scan - Scam Checker</title>
-  <meta name="description" content="Trust Scan helps you verify emails, phone numbers, and domains with real-time trust scoring." />
-  <meta name="theme-color" content="#161945" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="navbar" role="banner">
-    <div class="container navbar__inner">
-      <div class="logo">
-        <img src="assets/standard guy.png" alt="Trust Scan Logo" />
-        <h1 class="logo__title">Trust Scan</h1>
-      </div>
-
-      <!-- Mobile nav toggle -->
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </button>
-
-      <nav id="site-nav" class="nav" aria-label="Primary">
-        <ul class="nav__list">
-          <li><a href="#about" class="nav__link">About</a></li>
-          <li><a href="#features" class="nav__link">Features</a></li>
-          <li><a href="#coins" class="nav__link">Trust Coins</a></li>
-          <li><a href="#contact" class="nav__link">Support</a></li>
-          <li class="nav__cta">
-            <a href="#coming-soon" class="app-link cta">Trust Scan App</a>
-          </li>
-        </ul>
-      </nav>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/standard guy.png" alt="Trust Scan Logo" />
+      <h1>Trust Scan</h1>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#coins">Trust Coins</a></li>
+        <li><a href="#contact">Support</a></li>
+        <li>
+          <a href="#coming-soon" class="app-link cta">Trust Scan App</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <img src="assets/mascot flexing.png" alt="Trust Scan Mascot" class="mascot" />
-          <h2 class="hero__title">Scan Smarter. Stay Safer.</h2>
-          <p class="hero__subtitle">Unlimited scans for emails, phone numbers, and websites on the Trust Scan App.</p>
-          <div class="button-row">
-            <a href="#coming-soon" class="cta app-link">Get the Trust Scan App</a>
-            <a href="#about" class="cta app-link btn-ghost">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about section-pad" id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <h2 id="about-heading">What is Trust Scan?</h2>
-        <p class="max-700">
-          Trust Scan is a scam checker app that empowers users to verify emails, numbers, and domains using real-time trust scoring.
-          No tech knowledge required. Just scan and stay protected.
-        </p>
-        <div class="button-row">
-          <a href="#coming-soon" class="cta app-link">Try Trust Scan App</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="features section-pad" id="features" aria-labelledby="features-heading">
-      <div class="container">
-        <h2 id="features-heading">Why use Trust Scan app?</h2>
-
-        <div class="features-grid">
-          <article class="feature-box">
-            <img src="assets/computer_guy.png" alt="Unlimited scans illustration" />
-            <h3>Unlimited Scans</h3>
-            <p>Unlimited Trust Scans for websites, emails and phone numbers for free!</p>
-          </article>
-
-          <article class="feature-box">
-            <img src="assets/cool_guy.png" alt="Feature highlights illustration" />
-            <h3>Cool Features</h3>
-            <p class="feature-list">
-              Triple Multi Scanner<br>
-              Trusted APIs<br>
-              Premium offer (£1.89)<br>
-              Trust Coins<br>
-              Scan history<br>
-              Result sharing<br>
-              Reporting System
-            </p>
-          </article>
-
-          <article class="feature-box">
-            <img src="assets/police_man.png" alt="Report scams illustration" />
-            <h3>Report Scams</h3>
-            <p>Report low scoring scans directly to Trust Scan to get free Trust Coins</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-coins section-pad" id="coins" aria-labelledby="coins-heading">
-      <div class="container trust-coins__inner">
-        <div class="trust-coins__content">
-          <h2 id="coins-heading">🏅 Earn Trust Coins</h2>
-          <p class="max-700">Earn Trust Coins daily by scanning. Redeem 200 for 1 month of Premium access.</p>
-        </div>
-        <img src="assets/trustcoin.png" alt="Trust Coin" class="coin-image"/>
-      </div>
-    </section>
-
-    <section class="contact section-pad" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <h2 id="contact-heading">Need Help?</h2>
-        <p>Email us at <a href="mailto:support@trustscanapp.com">support@trustscanapp.com</a> or message us in the app.</p>
-      </div>
-    </section>
-
-    <section class="coming-soon section-pad" id="coming-soon" aria-labelledby="coming-heading">
-      <div class="container">
-        <div class="coming-soon-content">
-          <img src="assets/mascot flexing.png" alt="Trust Scan Coming Soon" class="mascot" />
-          <h2 id="coming-heading" class="coming-soon__title">
-            Trust Scan App<br>
-            <span class="coming-soon-tag">Coming Soon</span>
-          </h2>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p>&copy; 2025 Trust Scan. Stay safe online. | <a href="#disclaimer">Disclaimer</a></p>
+  <section class="hero">
+    <div class="hero-content">
+      <img src="assets/mascot flexing.png" alt="Trust Scan Mascot" class="mascot" />
+      <h2>Scan Smarter. Stay Safer.</h2>
+      <p>Unlimited scans for emails, phone numbers, and websites on the Trust Scan App.</p>
+      <a href="#coming-soon" class="cta app-link">Get the Trust Scan App</a>
+      <a href="#about" class="cta app-link">Learn More</a>
     </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>What is Trust Scan?</h2>
+    <p>Trust Scan is a scam checker app that empowers users to verify emails, numbers, and domains using real-time trust scoring. No tech knowledge required. Just scan and stay protected.</p>
+    <a href="#coming-soon" class="cta app-link">Try Trust Scan App</a>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Use Trust Scan app?</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <img src="assets/computer_guy.png" alt="Feature 1" />
+        <h3>Unlimited Scans</h3>
+        <p>Unlimited Trust Scans for websites, emails and phone numbers for free!</p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/cool_guy.png" alt="Feature 2" />
+        <h3>Cool Features</h3>
+        <p>
+          Triple Multi Scanner<br>
+          Trusted APIs<br>
+          Premium offer (£1.89)<br>
+          Trust Coins<br>
+          Scan history<br>
+          Result sharing<br>
+          Reporting System
+        </p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/police_man.png" alt="Feature 3" />
+        <h3>Report Scams</h3>
+        <p>Report low scoring scans directly to Trust Scan to get free Trust Coins</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-coins" id="coins">
+    <h2>🏅 Earn Trust Coins</h2>
+    <img src="assets/trustcoin.png" alt="Trust Coin" class="coin-image"/>
+    <p>Earn Trust Coins daily by scanning. Redeem 200 for 1 month of Premium access.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Need Help?</h2>
+    <p>Email us at <a href="mailto:support@trustscanapp.com">support@trustscanapp.com</a> or message us in the app.</p>
+  </section>
+
+  <!-- Coming Soon Section -->
+  <section class="coming-soon" id="coming-soon">
+    <div class="coming-soon-content">
+      <img src="assets/mascot flexing.png" alt="Trust Scan Coming Soon" class="mascot" />
+      <h2>Trust Scan App<br><span class="coming-soon-tag">Coming Soon</span></h2>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Trust Scan. Stay safe online. | <a href="#disclaimer">Disclaimer</a></p>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
