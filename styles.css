@@ -1,144 +1,357 @@
-/* ===== Tokens (kept theme) ===== */
-:root{
-  --bg-0:#1f243c;
-  --bg-1:#161945;
-  --bg-2:#101334;
-  --bg-3:#222652;
-  --bg-4:#2b2f66;
-  --card:#1f2250;
 
-  --text:#fff;
-  --muted:#ccc;
-
-  --accent:#FF2C2C;
-  --accent-dark:#e32222;
-
-  --radius:12px;
-  --shadow:0 10px 24px rgba(0,0,0,.25);
-  --ring:0 0 0 3px rgba(255,44,44,.35);
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-/* ===== Base ===== */
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:'Poppins','Noto Sans',sans-serif;
-  background:var(--bg-0);
-  color:var(--text);
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
-img{max-width:100%;height:auto}
-
-.container{width:min(1100px,92%);margin-inline:auto}
-.section-pad{padding:4rem 0}
-.max-700{max-width:700px;margin-inline:auto}
-
-/* Focus + skip */
-:focus-visible{outline:none;box-shadow:var(--ring);border-radius:8px}
-.skip-link{position:absolute;left:-999px;top:8px;background:var(--bg-1);color:var(--text);padding:.5rem .75rem;border-radius:8px}
-.skip-link:focus{left:8px;z-index:1000}
-
-/* ===== Navbar ===== */
-.navbar{position:sticky;top:0;z-index:100;background:var(--bg-1)}
-.navbar__inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
-
-.logo{display:flex;align-items:center;gap:.6rem}
-.logo img{height:50px}
-.logo__title{font-size:1.5rem;font-weight:700;margin:0}
-
-.nav__list{list-style:none;display:flex;gap:1.25rem;margin:0;padding:0;align-items:center}
-.nav__link{color:var(--text);text-decoration:none;font-weight:500;display:inline-block;padding:.4rem .25rem;transition:color .25s}
-.nav__link:hover,.nav__link.is-active{color:var(--accent)}
-.nav__cta{margin-left:.25rem}
-
-.nav-toggle{display:none;background:transparent;border:0;cursor:pointer;width:42px;height:36px;align-items:center;justify-content:center}
-.nav-toggle__bar{display:block;width:22px;height:2px;background:var(--text);margin:4px auto;transition:transform .25s,opacity .25s}
-
-/* ===== Hero ===== */
-.hero{background:linear-gradient(to bottom,#1B1F57,var(--bg-2));padding:4.5rem 0 4rem;text-align:center}
-.hero-content{max-width:720px;margin-inline:auto;animation:fadeIn 1.2s ease-in-out}
-.hero .mascot{max-height:200px;margin-bottom:1rem}
-.hero__title{font-size:clamp(2rem,4vw,2.8rem);margin:.25rem 0 1rem}
-.hero__subtitle{font-size:1.125rem;color:var(--muted);margin:0 0 2rem}
-.button-row{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
-
-/* Buttons (kept accent) */
-.cta,.app-link{
-  display:inline-block;background:var(--accent);color:#fff;
-  padding:.85rem 1.35rem;border-radius:10px;font-weight:700;text-decoration:none;
-  box-shadow:0 6px 16px rgba(255,44,44,.25);
-  transition:background .25s,transform .25s,box-shadow .25s;
-}
-.cta:hover,.app-link:hover{background:var(--accent-dark);transform:translateY(-2px) scale(1.02)}
-.cta:active,.app-link:active{transform:translateY(0)}
-.btn-ghost{background:transparent;border:2px solid var(--accent);color:var(--text);box-shadow:none}
-.btn-ghost:hover{background:rgba(255,44,44,.08);transform:translateY(-2px)}
-
-/* ===== About ===== */
-.about{text-align:center;background:var(--bg-3)}
-.about h2{font-size:clamp(1.6rem,3vw,2rem);margin-bottom:1rem}
-.about p{color:var(--muted)}
-
-/* ===== Features ===== */
-.features{background:var(--bg-4);text-align:center}
-.features h2{font-size:clamp(1.6rem,3vw,2rem);margin-bottom:2rem}
-.features-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.25rem}
-.feature-box{
-  grid-column:span 12;background:var(--card);border-radius:var(--radius);padding:1.75rem;
-  box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s;
-}
-.feature-box:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(0,0,0,.35)}
-.feature-box img{height:80px;margin-bottom:1rem}
-.feature-box h3{font-size:1.2rem;margin-bottom:.45rem;color:var(--accent)}
-.feature-box p{color:var(--muted);margin:0}
-.feature-list{line-height:1.7}
-@media (min-width:640px){.feature-box{grid-column:span 6}}
-@media (min-width:920px){.feature-box{grid-column:span 4}}
-
-/* ===== Trust Coins ===== */
-.trust-coins{background:linear-gradient(135deg,var(--bg-0) 80%,var(--bg-4) 100%)}
-.trust-coins__inner{display:grid;gap:1.25rem;align-items:center;grid-template-columns:1fr}
-.trust-coins__content h2{margin-bottom:.5rem}
-.coin-image{max-height:120px;margin:.5rem auto;display:block}
-.trust-coins p{color:var(--muted)}
-@media (min-width:840px){.trust-coins__inner{grid-template-columns:1.2fr .8fr}.coin-image{margin:0 0 0 auto}}
-
-/* ===== Contact ===== */
-.contact{background:#1B1F57;text-align:center}
-.contact a{color:var(--accent);font-weight:700;text-decoration:none}
-.contact a:hover{text-decoration:underline}
-
-/* ===== Coming Soon ===== */
-.coming-soon{background:linear-gradient(135deg,#23263a 80%,var(--bg-4) 100%);text-align:center;min-height:350px;display:flex;align-items:center}
-.coming-soon-content{display:flex;flex-direction:column;align-items:center;gap:1.25rem;width:100%;opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s}
-.coming-soon-content.appear{opacity:1;transform:translateY(0)}
-.coming-soon .mascot{max-height:180px;width:auto}
-.coming-soon__title{margin:0}
-.coming-soon-tag{display:inline-block;margin-top:.4rem;padding:.25rem .6rem;background:rgba(255,44,44,.12);border:1px solid var(--accent);color:var(--text);border-radius:999px;font-size:.9rem;letter-spacing:.3px}
-
-/* ===== Footer ===== */
-.footer{background:var(--bg-1);text-align:center;padding:1rem 0;color:#aaa}
-.footer a{color:#aaa;text-decoration:none}
-.footer a:hover{color:var(--accent)}
-
-/* ===== Appear animation ===== */
-@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-.feature-box,.hero-content,.about,.trust-coins,.contact{opacity:0;transform:translateY(20px)}
-.appear{opacity:1 !important;transform:translateY(0) !important;transition:all .8s}
-
-/* ===== Responsive nav ===== */
-@media (max-width:860px){
-  .nav-toggle{display:inline-flex}
-  .nav{position:absolute;inset:64px 0 auto 0;background:var(--bg-2);display:none}
-  .nav.open{display:block}
-  .nav__list{flex-direction:column;padding:.75rem 1rem 1rem;gap:.5rem}
-  .nav__cta{margin:.25rem 0 0;align-self:flex-start}
+body {
+  font-family: 'Poppins', 'Noto Sans', sans-serif;
+  background: #1f243c;
+  color: #fff; /* Optional: improves text contrast */
+  line-height: 1.6;
 }
 
-/* Reduced motion */
-@media (prefers-reduced-motion:reduce){
-  *{animation:none !important;transition:none !important}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: #161945;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #FF2C2C;
+}
+
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(to bottom, #1B1F57, #101334);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero .mascot {
+  max-height: 200px;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #FF2C2C;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #e32222;
+}
+
+/* === About Section === */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #222652;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+/* === Features Section === */
+.features {
+  padding: 4rem 2rem;
+  background-color: #2b2f66;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background-color: #1f2250;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box img {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #FF2C2C;
+}
+
+.feature-box p {
+  color: #ccc;
+}
+
+/* === Trust Coins Section === */
+.trust-coins {
+  background: linear-gradient(135deg, #1f243c 80%, #2b2f66 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.trust-coins h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.coin-image {
+  max-height: 120px;
+  margin: 1rem auto;
+}
+
+.trust-coins p {
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === Contact Section === */
+.contact {
+  background-color: #1B1F57;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact a {
+  color: #FF2C2C;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  background-color: #161945;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FF2C2C;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    background: #101334;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar ul.open {
+    display: flex;
+  }
+}
+
+/* Appear animation */
+.appear {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+  transition: all 0.8s ease;
+}
+
+.feature-box,
+.hero-content,
+.about,
+.trust-coins,
+.contact {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* App Link Button Style */
+.app-link {
+  margin: 0.5rem 0.5rem 0 0;
+  font-size: 1rem;
+  font-family: 'Poppins', 'Noto Sans', sans-serif;
+  background-color: #FF2C2C;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.7rem 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: inline-block;
+  animation: fadeIn 1.2s;
+}
+
+.app-link:hover {
+  background-color: #e32222;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Coming Soon Section */
+.coming-soon {
+  background: linear-gradient(135deg, #23263a 80%, #2b2f66 100%);
+  padding: 5rem 2rem;
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.coming-soon-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.coming-soon-content.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fix mascot size for desktop */
+.coming-soon .mascot {
+  max-height: 180px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+/* Fix button spacing in hero section for mobile */
+@media (max-width: 600px) {
+  .hero .cta.app-link {
+    margin-bottom: 1rem;
+    margin-right: 0;
+    display: block;
+  }
+  .hero .cta {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Fade in up animation for bottom section */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
 }
