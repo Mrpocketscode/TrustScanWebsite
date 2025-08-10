@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 80px; /* Adjust to match navbar height */
+}
+
 body {
   font-family: 'Poppins', 'Noto Sans', sans-serif;
   background: #1f243c;
