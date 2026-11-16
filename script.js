@@ -20,6 +20,17 @@ var STORE_LINKS = {
   var root = document.documentElement;
   root.classList.remove("no-js");
 
+  /* A new page always opens at the top. Back and forward still return to
+     where you were, and links to a section (#faq) still jump to it. */
+  function toTop() {
+    var nav = window.performance && performance.getEntriesByType &&
+      performance.getEntriesByType("navigation")[0];
+    var fresh = !nav || nav.type === "navigate";
+    if (fresh && !location.hash) window.scrollTo(0, 0);
+  }
+  toTop();
+  window.addEventListener("load", toTop);
+
   document.addEventListener("DOMContentLoaded", function () {
     /* Mobile navigation */
     var toggle = document.querySelector(".nav-toggle");
