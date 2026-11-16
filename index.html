@@ -1,103 +1,537 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB" class="no-js">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trust Scan - Scam Checker</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trust Scan+ | Website security checks and monitoring for site owners</title>
+  <meta name="description" content="Trust Scan+ runs authorised security checks on websites you own, explains the results in plain English and keeps an eye on key settings twice a day. Coming soon to the app.">
+  <link rel="canonical" href="https://trustscanapp.com/">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#001020">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Trust Scan+ | Website security checks for site owners">
+  <meta property="og:description" content="Authorised security checks and scheduled monitoring for websites you own. Coming soon to the app.">
+  <meta property="og:url" content="https://trustscanapp.com/">
+  <meta property="og:image" content="https://trustscanapp.com/assets/site/img/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/site/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/site/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/site/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="assets/standard guy.png" alt="Trust Scan Logo" />
-      <h1>Trust Scan</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Trust Scan+ home">
+        <img src="assets/site/img/mascot-bigflex.webp" alt="" width="44" height="44">
+        <span>Trust Scan<span class="plus">+</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#verify">Verification</a></li>
+          <li><a href="#report">Example report</a></li>
+          <li><a href="#monitoring">Monitoring</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-primary btn-small" href="coming-soon.html" data-app-link>Get the app</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#coins">Trust Credits</a></li>
-        <li><a href="#contact">Support</a></li>
-        <li>
-          <a href="#coming-soon" class="app-link cta">Trust Scan App</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <img src="assets/mascot flexing.png" alt="Trust Scan Mascot" class="mascot" />
-      <h2>Free Unlimited. Scam Checker.</h2>
-      <p>Unlimited scans for emails, phone numbers, and websites on the Trust Scan App.</p>
-      <a href="#coming-soon" class="cta app-link">Get the Trust Scan App</a>
-      <a href="#about" class="cta app-link">Learn More</a>
-    </div>
-  </section>
+  <main id="main">
 
-  <section class="about" id="about">
-    <h2>What is Trust Scan?</h2>
-    <p>Trust Scan is a scam checker app that empowers users to verify emails, numbers, and domains using real-time trust scoring. No tech knowledge required. Unlimited scans to stay protected.</p>
-    <a href="#coming-soon" class="cta app-link">Try Trust Scan App</a>
-  </section>
-
-  <section class="features" id="features">
-    <h2>Why Use Trust Scan app?</h2>
-    <div class="features-grid">
-      <div class="feature-box">
-        <img src="assets/computer_guy.png" alt="Feature 1" />
-        <h3>Unlimited Scans</h3>
-        <p>You need to know if your communicating with a scammer! So use our unlimited Trust Scans for websites, emails and phone numbers for free!</p>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow">Website security for site owners</span>
+          <h1>Find out how secure your website really is, <span class="hl">in plain English.</span></h1>
+          <p class="lead">Trust Scan+ runs authorised security checks on websites you own, explains what it finds and how to fix it, and keeps an eye on key settings twice a day. You do it all from the app.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="coming-soon.html" data-app-link>Get the app</a>
+            <a class="btn btn-secondary" href="#report">See an example report</a>
+          </div>
+          <p class="cta-note"><strong>App coming soon.</strong> Sign-up, website verification, reports and monitoring all happen in the app.</p>
+        </div>
+        <div class="anim">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/site/video/hero-flex.jpg" aria-hidden="true">
+            <source src="assets/site/video/hero-flex.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
-      <div class="feature-box">
-        <img src="assets/cool_guy.png" alt="Feature 2" />
-        <h3>Cool Features</h3>
-        <p>
-          Triple Multi Scanner<br>
-          Trusted APIs<br>
-          Free Trust Scores 0-100<br>
-          ------------<br>
-          Premium Offer (£1.89)<br>
-          Scan Indepth Info UNLOCKED<br>
-          Cool Mode<br>
-          Useful Tips<br>
-          Scan History<br>
-          Result Sharing<br>
-          Reporting System
-        </p>
+    </section>
+
+    <div class="trust-strip">
+      <ul class="wrap">
+        <li>Only sites you've verified</li>
+        <li>Findings in plain English</li>
+        <li>Checks run on our servers</li>
+        <li>Clear about what we don't cover</li>
+      </ul>
+    </div>
+
+    <!-- Who it's for -->
+    <section id="who">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Who it's for</span>
+          <h2>For people who run a website, not a security team.</h2>
+          <p class="lead">If a website matters to your business, you should know when its security settings slip. Trust Scan+ turns technical checks into findings you can act on.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg></div>
+            <h3>Small business owners</h3>
+            <p>Find out whether your shop, booking site or brochure site has common weaknesses, and what to ask your developer to fix.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3>Freelancers and web developers</h3>
+            <p>Check the sites you build and look after, then share clear reports with the people who own them.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Anyone responsible for a site</h3>
+            <p>Hear when your certificate is about to expire, a security header goes missing or your site stops responding.</p>
+          </article>
+        </div>
       </div>
-      <div class="feature-box">
-        <img src="assets/police_man.png" alt="Feature 3" />
-        <h3>Report Scams</h3>
-        <p>Report low scoring directly to Trust Scan to help the community</p>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section-alt">
+      <div class="wrap">
+        <div class="split">
+          <div class="section-head">
+            <span class="eyebrow">How it works</span>
+            <h2>Four steps, all in the app.</h2>
+            <p class="lead">Add your site, prove it's yours, and let our servers do the checking. You get a report you can understand and a list of things worth fixing.</p>
+          </div>
+          <img class="mascot mascot-sm" src="assets/site/img/mascot-point.webp" alt="Trust Scan+ mascot pointing the way" width="640" height="570" loading="lazy">
+        </div>
+        <ol class="steps">
+          <li class="paper">
+            <h3>Add your website</h3>
+            <p>Sign in to the app and enter the exact web address you want checked.</p>
+          </li>
+          <li class="paper">
+            <h3>Prove you control it</h3>
+            <p>Follow the verification step and confirm which checks you give permission for.</p>
+          </li>
+          <li class="paper">
+            <h3>We run the checks</h3>
+            <p>Our scanning servers run the agreed checks. Your phone doesn't have to stay open.</p>
+          </li>
+          <li class="paper">
+            <h3>Read and fix</h3>
+            <p>See each finding, how serious it is and what to do about it. Then switch on monitoring.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Engine / server -->
+    <section id="engine">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Behind the scenes</span>
+          <h2>The app is the remote control. Our servers do the work.</h2>
+          <p class="lead">Checks don't run on your phone. They run on Trust Scan+ scanning servers, which is why monitoring keeps going while the app is closed.</p>
+        </div>
+        <ol class="flow" aria-label="How a check travels from the app to a report">
+          <li>
+            <span class="tag">1 · App</span>
+            <h3>You ask</h3>
+            <p>You request a report or switch on monitoring for a verified site.</p>
+          </li>
+          <li>
+            <span class="tag">2 · Account check</span>
+            <h3>We confirm</h3>
+            <p>We check you're signed in, have verified the site and have an active plan for it.</p>
+          </li>
+          <li class="server">
+            <span class="tag">3 · Scanning server</span>
+            <h3>The engine runs</h3>
+            <p>Our scanning engine runs only the checks you've agreed to, against that exact hostname.</p>
+          </li>
+          <li>
+            <span class="tag">4 · Private report</span>
+            <h3>You see results</h3>
+            <p>Results are stored privately on your account and appear in the app, with your history.</p>
+          </li>
+        </ol>
+        <ul class="facts">
+          <li><strong>Private by default</strong>Reports belong to your account. There's no public results page.</li>
+          <li><strong>Permission is recorded</strong>We keep a record of each site you verified and the checks you agreed to.</li>
+          <li><strong>Failures aren't hidden</strong>If a check can't finish, it's marked incomplete, never quietly shown as a pass.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Verification -->
+    <section id="verify" class="section-alt">
+      <div class="wrap split reverse">
+        <div>
+          <span class="eyebrow">Ownership verification</span>
+          <h2>We only check websites you can prove are yours.</h2>
+          <p class="lead">Before any check runs, you show that you control the exact hostname. It protects you, and it stops anyone using Trust Scan+ against a site that isn't theirs.</p>
+          <ol class="verify-list">
+            <li><span class="num">1</span><p><strong>Get a code in the app.</strong> Each website gets its own unique verification code.</p></li>
+            <li><span class="num">2</span><p><strong>Place it on your site.</strong> For example, add it as a DNS record or upload a small file. You, your developer or your web host can do this.</p></li>
+            <li><span class="num">3</span><p><strong>Tap verify.</strong> We look for the code on that exact hostname. Verifying <em>example.com</em> doesn't cover <em>shop.example.com</em>.</p></li>
+            <li><span class="num">4</span><p><strong>Give permission.</strong> Confirm which checks we may run. We record it, and you can withdraw it at any time.</p></li>
+          </ol>
+          <div class="paper code-card">
+            <span class="label">Example only: not a real code</span>
+            <code>trustscan-verification=7f3c-EXAMPLE-91ab</code>
+            <p>The verification methods shown here are provisional and will be confirmed in the app before launch.</p>
+          </div>
+        </div>
+        <img class="mascot" src="assets/site/img/mascot-tip.webp" alt="Trust Scan+ mascot holding up one finger" width="600" height="571" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Example report -->
+    <section id="report">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Example report</span>
+          <h2>Here's what a report looks like.</h2>
+          <p class="lead">Every finding comes with how serious it is, what it means and how to fix it. Open any finding below to see the detail.</p>
+        </div>
+        <div class="split">
+          <article class="paper report" aria-label="Example security report with sample data">
+            <div class="sample-banner">
+              <span class="badge badge-sample">Example report</span>
+              <span>Sample data for an invented website. Not a real scan.</span>
+            </div>
+            <div class="report-body">
+              <div class="report-top">
+                <div class="score" role="img" aria-label="Example score 72 out of 100"><div><b>72</b><span>out of 100</span></div></div>
+                <div class="report-meta">
+                  <h3>brightbakes.example</h3>
+                  <p>Full report · Tuesday 10 November 2026, 09:14</p>
+                  <div class="tally">
+                    <span class="sev sev-high">1 high</span>
+                    <span class="sev sev-medium">2 medium</span>
+                    <span class="sev sev-low">2 low</span>
+                    <span class="sev sev-pass">8 passed</span>
+                    <span class="sev sev-incomplete">1 incomplete</span>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="findings">
+                <li class="finding">
+                  <details>
+                    <summary><span class="sev sev-high">High</span><span>Security certificate expires in 9 days</span></summary>
+                    <div class="detail">
+                      <p><strong>What it means:</strong> Once the certificate expires, browsers will warn visitors that the site isn't secure, and most will leave.</p>
+                      <p><strong>How to fix:</strong> Renew the certificate with your host, or turn on automatic renewal. Then run a new report to confirm it's fixed.</p>
+                    </div>
+                  </details>
+                </li>
+                <li class="finding">
+                  <details>
+                    <summary><span class="sev sev-medium">Medium</span><span>No Content-Security-Policy header</span></summary>
+                    <div class="detail">
+                      <p><strong>What it means:</strong> Without this header, browsers have fewer defences if malicious script gets into a page.</p>
+                      <p><strong>How to fix:</strong> Ask your developer to add a Content-Security-Policy, starting in report-only mode so nothing breaks.</p>
+                    </div>
+                  </details>
+                </li>
+                <li class="finding">
+                  <details>
+                    <summary><span class="sev sev-medium">Medium</span><span>Old TLS 1.0 connections still accepted</span></summary>
+                    <div class="detail">
+                      <p><strong>What it means:</strong> TLS 1.0 is an outdated version of the encryption that protects connections to your site, with known weaknesses.</p>
+                      <p><strong>How to fix:</strong> Turn off TLS 1.0 and 1.1 in your hosting or CDN settings, keeping TLS 1.2 and 1.3.</p>
+                    </div>
+                  </details>
+                </li>
+                <li class="finding">
+                  <details>
+                    <summary><span class="sev sev-low">Low</span><span>Server software version is shown publicly</span></summary>
+                    <div class="detail">
+                      <p><strong>What it means:</strong> Showing the exact version makes it easier for attackers to look up known problems with that software.</p>
+                      <p><strong>How to fix:</strong> Hide the version number in your server's response headers.</p>
+                    </div>
+                  </details>
+                </li>
+                <li class="finding">
+                  <details>
+                    <summary><span class="sev sev-low">Low</span><span>No Referrer-Policy header</span></summary>
+                    <div class="detail">
+                      <p><strong>What it means:</strong> Full page addresses may be passed to other sites when visitors click links on yours.</p>
+                      <p><strong>How to fix:</strong> Set <em>Referrer-Policy: strict-origin-when-cross-origin</em>.</p>
+                    </div>
+                  </details>
+                </li>
+                <li class="finding">
+                  <details>
+                    <summary><span class="sev sev-incomplete">Incomplete</span><span>Email security records check</span></summary>
+                    <div class="detail">
+                      <p><strong>What it means:</strong> The DNS lookup timed out, so we don't know the result. Incomplete checks are never counted as a pass.</p>
+                      <p><strong>Next step:</strong> It will be tried again in the next report.</p>
+                    </div>
+                  </details>
+                </li>
+              </ul>
+
+              <div class="coverage">
+                <span><strong>Coverage:</strong> 13 of 14 checks finished</span>
+                <span class="bar" aria-hidden="true"><i></i></span>
+                <span>Passed: HTTPS redirect, HSTS, X-Content-Type-Options, frame protection and 4 more</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="report-aside">
+            <h3>In every full report</h3>
+            <ul>
+              <li><strong>A score and summary</strong> so you can see where you stand at a glance.</li>
+              <li><strong>Severity for each finding</strong>, from high to low, so you know what to fix first.</li>
+              <li><strong>Plain-English fixes</strong> you can follow yourself or pass to your developer.</li>
+              <li><strong>Coverage</strong> showing which checks finished and which didn't.</li>
+              <li><strong>Report history</strong> so you can see what has improved over time.</li>
+            </ul>
+            <p>This example is for illustration only. The checks, layout and score shown in the app may differ.</p>
+            <img class="mascot mascot-sm" src="assets/site/img/mascot-alert.webp" alt="Worried Trust Scan+ mascot with a warning sign" width="570" height="600" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Monitoring -->
+    <section id="monitoring" class="section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Monitoring</span>
+          <h2>Twice-daily checks, and we tell you what changed.</h2>
+          <p class="lead">Switch on monitoring and our servers run lightweight checks for availability, certificate expiry and selected security headers, provisionally around 09:00 and 21:00 UK time. Each result is compared with the last one, so you see what got better, what got worse and what to do next.</p>
+        </div>
+        <div class="monitor-grid">
+          <div>
+            <div class="notice" aria-label="Example phone notification">
+              <img src="assets/site/img/mascot-alert.webp" alt="" width="44" height="44" loading="lazy">
+              <div>
+                <div class="app"><span>TRUST SCAN+</span><span>21:02</span></div>
+                <b>brightbakes.example: 1 setting got worse</b>
+                <p>HSTS header missing since this morning's check. Tap to see what to do.</p>
+              </div>
+            </div>
+
+            <article class="paper report" aria-label="Example monitoring update with sample data">
+              <div class="sample-banner">
+                <span class="badge badge-sample">Example update</span>
+                <span>Tuesday 21:00 check · sample data</span>
+              </div>
+              <ul class="changes">
+                <li>
+                  <span class="what">Strict-Transport-Security (HSTS)</span><span class="chg chg-worse">Worse</span>
+                  <span class="why">Present at 09:00, missing now. Often caused by a hosting or CDN change. Put the header back in your server or CDN settings.</span>
+                </li>
+                <li>
+                  <span class="what">Referrer-Policy</span><span class="chg chg-better">Better</span>
+                  <span class="why">Newly added since the last check. Nothing to do.</span>
+                </li>
+                <li>
+                  <span class="what">Availability</span><span class="chg chg-same">No change</span>
+                  <span class="why">Site responded normally.</span>
+                </li>
+                <li>
+                  <span class="what">Certificate expiry</span><span class="chg chg-same">No change</span>
+                  <span class="why">41 days left. We'll warn you well before it runs out.</span>
+                </li>
+                <li>
+                  <span class="what">X-Frame-Options</span><span class="chg chg-incomplete">Incomplete</span>
+                  <span class="why">The request timed out. This isn't counted as a pass, and we'll try again at the next check.</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div>
+            <div class="anim">
+              <video autoplay muted loop playsinline preload="metadata" poster="assets/site/video/alert.jpg" aria-hidden="true">
+                <source src="assets/site/video/alert.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3>Check history (example)</h3>
+            <ul class="timeline">
+              <li><time>Mon 09:00</time><span><span class="chg chg-same">No change</span> Baseline recorded</span></li>
+              <li><time>Mon 21:00</time><span><span class="chg chg-same">No change</span> All checks steady</span></li>
+              <li><time>Tue 09:00</time><span><span class="chg chg-better">Better</span> Referrer-Policy added</span></li>
+              <li><time>Tue 21:00</time><span><span class="chg chg-worse">Worse</span> HSTS missing</span></li>
+            </ul>
+            <p class="cta-note">Results with no change stay in your history. Repeat alerts are grouped so you aren't told the same thing twice. Notification options are still being finalised.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honesty -->
+    <section id="limits">
+      <div class="wrap split reverse">
+        <div>
+          <span class="eyebrow">What to expect</span>
+          <h2>What Trust Scan+ does, and what it doesn't.</h2>
+          <p class="lead">We'd rather be clear than promise too much. Trust Scan+ gives you scheduled visibility into selected checks.</p>
+          <ul class="limits">
+            <li class="yes"><strong>Does:</strong> run agreed, automated checks on websites you've verified, and explain the results.</li>
+            <li class="yes"><strong>Does:</strong> repeat lightweight checks on a schedule and tell you what changed.</li>
+            <li><strong>Doesn't:</strong> block attacks or protect your site in real time.</li>
+            <li><strong>Doesn't:</strong> check everything. No automated tool can guarantee a site is safe.</li>
+            <li><strong>Doesn't:</strong> check websites you haven't verified, ever.</li>
+          </ul>
+        </div>
+        <img class="mascot" src="assets/site/img/mascot-hips.webp" alt="Confident Trust Scan+ mascot with hands on hips" width="591" height="600" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section-alt">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple pricing, one website per plan.</h2>
+          <p class="lead">You'll subscribe and manage your plan in the app. These prices are a draft and may change before launch.</p>
+        </div>
+        <div class="pricing">
+          <article class="plan dark">
+            <span class="badge badge-draft">Draft</span>
+            <h3>Free</h3>
+            <p class="price">£0</p>
+            <p class="per">for one verified website</p>
+            <ul>
+              <li>A weekly security score</li>
+              <li>A short summary of what to look at</li>
+              <li>Verification and permission controls</li>
+            </ul>
+            <a class="btn btn-secondary" href="coming-soon.html" data-app-link>Get the app</a>
+          </article>
+          <article class="plan paper">
+            <span class="badge badge-draft">Draft price</span>
+            <h3>Trust Scan+</h3>
+            <p class="price">£13<small>/month</small></p>
+            <p class="per">for one verified website</p>
+            <ul>
+              <li>A full report when you start</li>
+              <li>Regular scheduled full reports (frequency to be confirmed)</li>
+              <li>Twice-daily monitoring checks</li>
+              <li>Notifications when something changes</li>
+              <li>Full findings, fixes and report history</li>
+            </ul>
+            <a class="btn btn-primary" href="coming-soon.html" data-app-link>Get the app</a>
+            <img class="plan-mascot" src="assets/site/img/mascot-thumbs.webp" alt="" width="580" height="600" loading="lazy">
+          </article>
+        </div>
+        <p class="pricing-note">Prices, what's included, billing and cancellation terms will be confirmed before launch and shown in the app before you pay.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions people ask.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Can I check any website?</summary>
+            <p>No. You can only check websites you have verified that you control, and only with the checks you've given permission for. Each hostname is verified separately.</p>
+          </details>
+          <details>
+            <summary>Do I need an account to see the example report?</summary>
+            <p>No. The examples on this page use invented data and need no account. To check your own site, you'll sign up in the app.</p>
+          </details>
+          <details>
+            <summary>Does monitoring work when my phone is off?</summary>
+            <p>Yes. Checks run on Trust Scan+ servers, not on your phone. The app shows results and sends notifications based on your settings.</p>
+          </details>
+          <details>
+            <summary>Is this a penetration test?</summary>
+            <p>No. Trust Scan+ runs automated checks you agree to beforehand. It isn't a replacement for a professional penetration test or a full security audit.</p>
+          </details>
+          <details>
+            <summary>What happens if a check can't finish?</summary>
+            <p>It's marked as incomplete, never shown as a pass. We try again at the next scheduled check.</p>
+          </details>
+          <details>
+            <summary>Who can see my reports?</summary>
+            <p>Your reports are stored privately on your account. We're planning a way to share or export a report safely, for example with your developer.</p>
+          </details>
+          <details>
+            <summary>How do I cancel or delete my account?</summary>
+            <p>You'll manage your subscription in the app. Cancellation details will be published before launch. See <a href="account-deletion.html">account deletion</a> for how to delete your account and data.</p>
+          </details>
+          <details>
+            <summary>When is the app available?</summary>
+            <p>Soon. Store links will appear on this site as soon as the app is live. Until then, the app buttons take you to a coming-soon page.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="support">
+      <div class="wrap">
+        <div class="paper">
+          <div>
+            <h2>Ready to check your website?</h2>
+            <p>Get the app to add and verify your site. Got a question? <a href="support.html">Contact support</a>.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="coming-soon.html" data-app-link>Get the app</a>
+            </div>
+          </div>
+          <img src="assets/site/img/mascot-celebrate.webp" alt="Celebrating Trust Scan+ mascot" width="575" height="600" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./">
+            <img src="assets/site/img/mascot-bigflex.webp" alt="" width="44" height="44" loading="lazy">
+            <span>Trust Scan<span class="plus">+</span></span>
+          </a>
+          <p>Authorised website security checks and scheduled monitoring for site owners.</p>
+        </div>
+        <div>
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#report">Example report</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="coming-soon.html" data-app-link>Get the app</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Help and legal</h3>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="account-deletion.html">Account deletion</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span data-year>2026</span> Trust Scan+</span>
+        <span>Scheduled visibility into selected checks. Not real-time protection.</span>
       </div>
     </div>
-  </section>
-
-  <section class="trust-coins" id="coins">
-    <h2>Earn Trust Credits</h2>
-    <img src="assets/trustcoin.png" alt="Trust Coin" class="coin-image"/>
-    <p>Earn Trust Credits daily by scanning. Redeem 200 for 1 month of Premium access.</p>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Need Help?</h2>
-    <p>Email us at <a href="mailto:support@trustscanapp.com">support@trustscanapp.com</a> or message us in the app.</p>
-  </section>
-
-  <!-- Coming Soon Section -->
-  <section class="coming-soon" id="coming-soon">
-    <div class="coming-soon-content">
-      <img src="assets/575FEBCC_optimized_finalNEW(1).png" alt="Trust Scan Coming Soon" class="mascot" />
-      <h2>Trust Scan App<br><span class="coming-soon-tag">Coming Soon</span></h2>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Trust Scan. Stay safe online. | <a href="#disclaimer">Disclaimer</a></p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
