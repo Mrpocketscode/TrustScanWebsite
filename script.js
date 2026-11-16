@@ -79,6 +79,19 @@ var STORE_LINKS = {
       videos.forEach(function (v) { io.observe(v); });
     }
 
+    /* Old single-page links (trustscanapp.com/#pricing) go to the new pages */
+    var moved = {
+      "#how": "how-it-works.html", "#engine": "how-it-works.html", "#verify": "how-it-works.html#verify",
+      "#report": "example-report.html", "#monitoring": "monitoring.html",
+      "#pricing": "pricing.html", "#limits": "pricing.html#limits", "#faq": "faq.html"
+    };
+    var path = location.pathname;
+    if ((path === "/" || /\/index\.html$/.test(path)) && moved[location.hash] &&
+        !document.getElementById(location.hash.slice(1))) {
+      location.replace(moved[location.hash]);
+      return;
+    }
+
     /* Footer year */
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = String(new Date().getFullYear());
