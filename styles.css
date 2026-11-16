@@ -1401,3 +1401,31 @@ main > section.page-hero + section { padding-top: clamp(2rem, 5vw, 3.25rem); }
   .site-footer .brand { justify-content: center; }
   .footer-base { justify-content: center; text-align: center; }
 }
+
+/* Support page contact card */
+.contact-card {
+  text-align: center;
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+  margin: 0 0 2rem;
+  display: grid;
+  justify-items: center;
+  gap: .6rem;
+}
+.contact-label {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--brick);
+}
+.paper a.contact-email {
+  font-size: clamp(1.15rem, 3.2vw, 1.6rem);
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+.paper a.contact-email:hover { color: var(--brick); }
+.contact-card p { color: #3c4656; max-width: 52ch; }

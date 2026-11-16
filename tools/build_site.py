@@ -380,11 +380,11 @@ simple('account-deletion.html', 'Account deletion', 'How to delete your Trust Sc
 ''')
 
 simple('support.html', 'Support', 'Get help with Trust Scan+.', 'Support', 'How can we help?',
-       '''        <div class="paper placeholder">
-          <span class="badge badge-draft">To confirm</span>
-          <!-- SUPPORT-EMAIL: replace this paragraph with the confirmed support address as a mailto link.
-               This is the only place the address appears on the site. -->
-          <p>Support email address: to be confirmed before launch. Once the app is live, you'll also be able to contact us from inside it.</p>
+       '''        <div class="paper contact-card">
+          <span class="contact-label">Email us</span>
+          <!-- SUPPORT-EMAIL: the only place the support address appears on the site. -->
+          <a class="contact-email" href="mailto:support@trustscanapp.com">support@trustscanapp.com</a>
+          <p>Questions about Trust Scan+, the app launch, or your website? Send us an email and we'll get back to you. Once the app is live, you'll also be able to contact us from inside it.</p>
         </div>
         <h2>Common questions</h2>
         <p>Many answers are in the <a href="faq.html">FAQ</a>. To delete your account, see <a href="account-deletion.html">deleting your account</a>.</p>
