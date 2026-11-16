@@ -167,34 +167,29 @@
       <div class="wrap">
         <div class="section-head center">
           <span class="eyebrow">Example report</span>
-          <h2>Here's what a real report looks like.</h2>
-          <p class="lead">This example is based on a real Trust Scan+ report, shared with permission. The website name and page addresses have been changed.</p>
+          <h2>A quick look at a report.</h2>
+          <p class="lead">This is a short, simplified preview based on a real Trust Scan+ report, shared with permission and with the website name changed. Your full report checks far more, in much more depth.</p>
         </div>
 
-        <article class="rpt" aria-label="Example security report">
-          <div class="sample-banner">
-            <span class="badge badge-sample">Example report</span>
-            <span>Based on a real report. Website name changed.</span>
+        <article class="rpt" aria-label="Simplified example of a security report">
+          <div class="rpt-flag">
+            <strong>Simplified example</strong>
+            <span>3 of 38 topics shown. Full reports go much deeper.</span>
           </div>
           <header class="rpt-head">
             <img src="assets/site/img/mascot-tip.webp" alt="" width="600" height="571" loading="lazy">
-            <p class="rpt-brand">Trust Scan<span class="plus">+</span></p>
             <h3>Your website security report</h3>
-            <p class="rpt-sub">Know what needs attention.</p>
             <p class="rpt-meta">Assessed: <strong>brightbakes.example</strong> · 16 November 2026</p>
             <div class="rpt-stats">
-              <div><b>48 / 100</b><span>Needs attention</span><small>Guide website rating (provisional)</small></div>
-              <div><b>38 topics</b><span>Across the areas below</span></div>
-              <div><b>3 pages</b><span>Public pages analysed</span></div>
+              <div><b>48 / 100</b><span>Needs attention</span><small>Guide rating (provisional)</small></div>
+              <div><b>38 topics</b><span>Checked in this report</span></div>
+              <div><b>11 warnings</b><span>To review</span></div>
             </div>
           </header>
 
           <div class="rpt-body">
-            <p class="rpt-alert"><strong>11 warnings to review.</strong> 38 topics include advice or review items. This limited assessment does not establish that the whole website is secure.</p>
-            <p class="rpt-note"><strong>A finding does not automatically mean your website is hackable.</strong> Some items suggest extra protection; others may indicate vulnerabilities. A higher rating cannot guarantee security.</p>
-
             <div class="rpt-legend">
-              <span>Warning type</span>
+              <span>Warning types</span>
               <span class="pill pill-advice">Advice</span>
               <span class="pill pill-low">Low</span>
               <span class="pill pill-medium">Medium</span>
@@ -203,72 +198,47 @@
             </div>
 
             <ul class="rpt-list">
-              <li class="rpt-row">
-                <div class="rpt-area"><b>Browser</b><span>Browser protection</span><span class="pill pill-medium">Medium</span></div>
-                <div>
-                  <h4>Framing protection is absent</h4>
-                  <p class="rpt-checked">Seen on 3 pages</p>
-                  <p class="plain"><strong>In plain English:</strong> another website could show your page inside its own and trick visitors into clicking things.</p>
-                </div>
-                <div><span class="col-label">Why it matters</span><p>The page lacks framing protections. This can allow unwanted embedding; clickjacking was not demonstrated.</p></div>
-                <div class="rpt-next"><span class="col-label">What to do next</span><p>Ask your developer to configure CSP frame-ancestors and, where appropriate, X-Frame-Options. Test intended embedding.</p></div>
+              <li class="rpt-find">
+                <div class="rpt-find-top"><span class="pill pill-medium">Medium</span><span class="rpt-find-area">Browser protection · seen on 3 pages</span></div>
+                <h4>Other websites can show your pages inside theirs</h4>
+                <p>This can be used to trick visitors into clicking things they didn't mean to. The check did not show this actually happening.</p>
+                <p class="rpt-do"><span class="col-label">What to do next</span>Ask your developer to switch on framing protection.</p>
+                <p class="rpt-tech">In the full report: &ldquo;Framing protection is absent&rdquo;, with technical details and guidance for your developer.</p>
               </li>
-              <li class="rpt-row">
-                <div class="rpt-area"><b>Browser</b><span>Browser protection</span><span class="pill pill-low">Low</span></div>
-                <div>
-                  <h4>HTTPS Transport Security header absent or empty</h4>
-                  <p class="rpt-checked">Seen on 3 pages</p>
-                  <p class="plain"><strong>In plain English:</strong> browsers aren't being told to always use the secure version of your website.</p>
-                </div>
-                <div><span class="col-label">Why it matters</span><p>Without this, a visit can start without encryption. This check did not establish an interception.</p></div>
-                <div class="rpt-next"><span class="col-label">What to do next</span><p>Ask your developer or host to add Strict-Transport-Security once HTTPS and certificate renewal work reliably. Start with a short max-age and test before extending it.</p></div>
+              <li class="rpt-find">
+                <div class="rpt-find-top"><span class="pill pill-low">Low</span><span class="rpt-find-area">Browser protection · seen on 3 pages</span></div>
+                <h4>Browsers aren't told to always use your secure connection</h4>
+                <p>Without this, a visit can start on an unprotected connection. The check did not show anyone intercepting visits.</p>
+                <p class="rpt-do"><span class="col-label">What to do next</span>Ask your developer or hosting company to switch this on, starting with a short test period.</p>
+                <p class="rpt-tech">In the full report: &ldquo;HTTPS Transport Security header absent or empty&rdquo;, with technical details and guidance for your developer.</p>
               </li>
-              <li class="rpt-row">
-                <div class="rpt-area"><b>Browser</b><span>Browser protection</span><span class="pill pill-advice">Advice</span></div>
-                <div>
-                  <h4>Enforcing CSP response header is absent</h4>
-                  <p class="rpt-checked">Seen on 3 pages</p>
-                  <p class="plain"><strong>In plain English:</strong> your website doesn't tell browsers which code is allowed to run.</p>
-                </div>
-                <div><span class="col-label">Why it matters</span><p>An enforcing CSP response header was not observed. This does not prove exploitable XSS.</p></div>
-                <div class="rpt-next"><span class="col-label">What to do next</span><p>Ask your developer to design and test an enforcing CSP for the resources this page requires.</p></div>
-              </li>
-              <li class="rpt-row">
-                <div class="rpt-area"><b>Email</b><span>Email protection</span><span class="pill pill-advice">Advice</span></div>
-                <div>
-                  <h4>No direct DMARC record observed</h4>
-                  <p class="rpt-checked">Checked: brightbakes.example</p>
-                  <p class="plain"><strong>In plain English:</strong> there's no clear rule to stop fake emails that look like they come from your domain.</p>
-                </div>
-                <div><span class="col-label">Why it matters</span><p>Email spoofing was not demonstrated. A direct DMARC record was not seen; a parent policy may apply.</p></div>
-                <div class="rpt-next"><span class="col-label">What to do next</span><p>Ask your email provider to check any inherited policy and legitimate senders before proposing DMARC changes.</p></div>
-              </li>
-              <li class="rpt-row">
-                <div class="rpt-area"><b>DNS</b><span>Domain settings</span><span class="pill pill-advice">Advice</span></div>
-                <div>
-                  <h4>No CAA policy observed</h4>
-                  <p class="rpt-checked">Checked: brightbakes.example</p>
-                  <p class="plain"><strong>In plain English:</strong> you haven't limited which companies can issue security certificates for your website.</p>
-                </div>
-                <div><span class="col-label">Why it matters</span><p>This scan did not establish certificate misuse. CAA is an optional restriction on which providers may issue certificates.</p></div>
-                <div class="rpt-next"><span class="col-label">What to do next</span><p>Ask your DNS or hosting provider whether CAA would help your certificate setup. Check renewal before changing it.</p></div>
+              <li class="rpt-find">
+                <div class="rpt-find-top"><span class="pill pill-advice">Advice</span><span class="rpt-find-area">Email protection</span></div>
+                <h4>No clear rule to stop fake emails using your domain</h4>
+                <p>The check did not show any fake emails being sent, and a rule may already be inherited from elsewhere.</p>
+                <p class="rpt-do"><span class="col-label">What to do next</span>Ask your email provider to check your settings before changing anything.</p>
+                <p class="rpt-tech">In the full report: &ldquo;No direct DMARC record observed&rdquo;, with technical details and guidance for your developer.</p>
               </li>
             </ul>
-            <p class="rpt-more">Showing 5 of 38 topics from this report.</p>
 
-            <div class="rpt-checked-box">
-              <h4>What was checked</h4>
-              <p>Assessment: <strong>incomplete</strong>. This report covers only the listed checks and pages.</p>
+            <p class="rpt-note"><strong>A finding does not automatically mean your website is hackable.</strong> Some items suggest extra protection; others may point to real weaknesses. A higher rating cannot guarantee security.</p>
+
+            <div class="rpt-depth">
+              <h4>This is only a preview. Your full report goes much deeper.</h4>
+              <p>The real report behind this example checked 38 topics. Every full report includes:</p>
               <ul>
-                <li>Public pages only. No logins, forms or passwords.</li>
-                <li>3 pages were checked. This is not a full list of every page on the website.</li>
+                <li><strong>Dozens of checks</strong> across your domain settings, email protection, browser protection and more.</li>
+                <li><strong>Each page checked separately</strong>, so you know exactly where a problem is.</li>
+                <li><strong>Technical details and guidance</strong> for every finding, ready to hand to your developer.</li>
+                <li><strong>A technology review</strong> of the software your website is built on.</li>
+                <li><strong>Exposure checks</strong> for things that shouldn't be public.</li>
+                <li><strong>The complete check list</strong>, showing what was checked and what couldn't be.</li>
               </ul>
             </div>
           </div>
         </article>
 
         <div class="report-cta">
-          <p>In the app, you can open any finding to see the technical details for your developer.</p>
           <a class="btn btn-primary" href="coming-soon.html" data-app-link>Get the app</a>
         </div>
       </div>
