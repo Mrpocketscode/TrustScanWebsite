@@ -13,6 +13,12 @@ import sys
 SRC, ROOT = sys.argv[1], sys.argv[2]
 src = open(SRC).read()
 
+# Version stamp for the stylesheet and script: it changes whenever either file
+# changes, so browsers and Cloudflare fetch the new copy instead of a cached one.
+import hashlib
+VER = hashlib.sha256(open(os.path.join(ROOT, 'styles.css'), 'rb').read() +
+                     open(os.path.join(ROOT, 'script.js'), 'rb').read()).hexdigest()[:10]
+
 
 def section(name):
     """Return the <section>…</section> that follows <!-- name -->."""
@@ -76,8 +82,8 @@ def head(fn, title, desc, p, noindex=False, og=False):
   <meta name="theme-color" content="#001020">{ogt}
 {ICON.format(p=p)}
   <link rel="preload" href="{p}assets/site/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
-  <link rel="stylesheet" href="{p}styles.css">
-  <script src="{p}script.js" defer></script>
+  <link rel="stylesheet" href="{p}styles.css?v={VER}">
+  <script src="{p}script.js?v={VER}" defer></script>
 </head>
 '''
 
