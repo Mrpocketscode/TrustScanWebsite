@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example report | Trust Scan+</title>
+  <meta name="description" content="A simplified example of a Trust Scan+ website security report, based on a real report with the website name changed.">
+  <link rel="canonical" href="https://trustscanapp.com/example-report.html">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#001020">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/site/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/site/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/site/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Trust Scan+ home">
+        <img src="assets/site/img/mascot-bigflex.webp" alt="" width="44" height="44">
+        <span>Trust Scan<span class="plus">+</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="example-report.html" aria-current="page">Example report</a></li>
+          <li><a href="monitoring.html">Monitoring</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="btn btn-primary btn-small" href="coming-soon.html" data-app-link>Get the app</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap page-hero-inner">
+        <div>
+          <span class="eyebrow">Example report</span>
+          <h1>A quick look at a report.</h1>
+          <p class="lead">This is a short, simplified preview based on a real Trust Scan+ report, shared with permission and with the website name changed. Your full report checks far more, in much more depth.</p>
+        </div>
+        <img class="page-hero-img" src="assets/site/img/mascot-spotlight.webp" alt="" width="600" height="600">
+      </div>
+    </section>
+
+    <section id="report" class="section-alt">
+      <div class="wrap">
+
+        <article class="rpt" aria-label="Simplified example of a security report">
+          <div class="rpt-flag">
+            <strong>Simplified example</strong>
+            <span>3 of 38 topics shown. Full reports go much deeper.</span>
+          </div>
+          <header class="rpt-head">
+            <img src="assets/site/img/mascot-tip.webp" alt="" width="600" height="571" loading="lazy">
+            <h3>Your website security report</h3>
+            <p class="rpt-meta">Assessed: <strong>brightbakes.example</strong> · 16 November 2026</p>
+            <div class="rpt-stats">
+              <div><b>48 / 100</b><span>Needs attention</span><small>Guide rating (provisional)</small></div>
+              <div><b>38 topics</b><span>Checked in this report</span></div>
+              <div><b>11 warnings</b><span>To review</span></div>
+            </div>
+          </header>
+
+          <div class="rpt-body">
+            <div class="rpt-legend">
+              <span>Warning types</span>
+              <span class="pill pill-advice">Advice</span>
+              <span class="pill pill-low">Low</span>
+              <span class="pill pill-medium">Medium</span>
+              <span class="pill pill-high">High</span>
+              <span class="pill pill-very">Very high</span>
+            </div>
+
+            <ul class="rpt-list">
+              <li class="rpt-find">
+                <div class="rpt-find-top"><span class="pill pill-medium">Medium</span><span class="rpt-find-area">Browser protection · seen on 3 pages</span></div>
+                <h4>Other websites can show your pages inside theirs</h4>
+                <p>This can be used to trick visitors into clicking things they didn't mean to. The check did not show this actually happening.</p>
+                <p class="rpt-do"><span class="col-label">What to do next</span>Ask your developer to switch on framing protection.</p>
+                <p class="rpt-tech">In the full report: &ldquo;Framing protection is absent&rdquo;, with technical details and guidance for your developer.</p>
+              </li>
+              <li class="rpt-find">
+                <div class="rpt-find-top"><span class="pill pill-low">Low</span><span class="rpt-find-area">Browser protection · seen on 3 pages</span></div>
+                <h4>Browsers aren't told to always use your secure connection</h4>
+                <p>Without this, a visit can start on an unprotected connection. The check did not show anyone intercepting visits.</p>
+                <p class="rpt-do"><span class="col-label">What to do next</span>Ask your developer or hosting company to switch this on, starting with a short test period.</p>
+                <p class="rpt-tech">In the full report: &ldquo;HTTPS Transport Security header absent or empty&rdquo;, with technical details and guidance for your developer.</p>
+              </li>
+              <li class="rpt-find">
+                <div class="rpt-find-top"><span class="pill pill-advice">Advice</span><span class="rpt-find-area">Email protection</span></div>
+                <h4>No clear rule to stop fake emails using your domain</h4>
+                <p>The check did not show any fake emails being sent, and a rule may already be inherited from elsewhere.</p>
+                <p class="rpt-do"><span class="col-label">What to do next</span>Ask your email provider to check your settings before changing anything.</p>
+                <p class="rpt-tech">In the full report: &ldquo;No direct DMARC record observed&rdquo;, with technical details and guidance for your developer.</p>
+              </li>
+            </ul>
+
+            <p class="rpt-note"><strong>A finding does not automatically mean your website is hackable.</strong> Some items suggest extra protection; others may point to real weaknesses. A higher rating cannot guarantee security.</p>
+
+            <div class="rpt-depth">
+              <h4>This is only a preview. Your full report goes much deeper.</h4>
+              <p>The real report behind this example checked 38 topics. Every full report includes:</p>
+              <ul>
+                <li><strong>Dozens of checks</strong> across your domain settings, email protection, browser protection and more.</li>
+                <li><strong>Each page checked separately</strong>, so you know exactly where a problem is.</li>
+                <li><strong>Technical details and guidance</strong> for every finding, ready to hand to your developer.</li>
+                <li><strong>A technology review</strong> of the software your website is built on.</li>
+                <li><strong>Exposure checks</strong> for things that shouldn't be public.</li>
+                <li><strong>The complete check list</strong>, showing what was checked and what couldn't be.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <div class="report-cta">
+          <a class="btn btn-primary" href="coming-soon.html" data-app-link>Get the app</a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="Next page">
+      <div class="wrap">
+        <a class="pager-link" href="monitoring.html">
+          <span class="pager-kicker">Next</span>
+          <span class="pager-title">Monitoring <span aria-hidden="true">&rarr;</span></span>
+          <span class="pager-blurb">How twice-daily checks and alerts work.</span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./">
+            <img src="assets/site/img/mascot-bigflex.webp" alt="" width="44" height="44" loading="lazy">
+            <span>Trust Scan<span class="plus">+</span></span>
+          </a>
+          <p>Security checks and monitoring for websites you own.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="example-report.html">Example report</a></li>
+            <li><a href="monitoring.html">Monitoring</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Help and legal</h3>
+          <ul>
+            <li><a href="coming-soon.html" data-app-link>Get the app</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="account-deletion.html">Account deletion</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span data-year>2026</span> Trust Scan+</span>
+        <span>Scheduled checks, not real-time protection.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

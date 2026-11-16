@@ -20,6 +20,17 @@ var STORE_LINKS = {
   var root = document.documentElement;
   root.classList.remove("no-js");
 
+  /* A new page always opens at the top. Back and forward still return to
+     where you were, and links to a section (#faq) still jump to it. */
+  function toTop() {
+    var nav = window.performance && performance.getEntriesByType &&
+      performance.getEntriesByType("navigation")[0];
+    var fresh = !nav || nav.type === "navigate";
+    if (fresh && !location.hash) window.scrollTo(0, 0);
+  }
+  toTop();
+  window.addEventListener("load", toTop);
+
   document.addEventListener("DOMContentLoaded", function () {
     /* Mobile navigation */
     var toggle = document.querySelector(".nav-toggle");
@@ -77,6 +88,19 @@ var STORE_LINKS = {
         });
       }, { threshold: 0.15 });
       videos.forEach(function (v) { io.observe(v); });
+    }
+
+    /* Old single-page links (trustscanapp.com/#pricing) go to the new pages */
+    var moved = {
+      "#how": "how-it-works.html", "#engine": "how-it-works.html", "#verify": "how-it-works.html#verify",
+      "#report": "example-report.html", "#monitoring": "monitoring.html",
+      "#pricing": "pricing.html", "#limits": "pricing.html#limits", "#faq": "faq.html"
+    };
+    var path = location.pathname;
+    if ((path === "/" || /\/index\.html$/.test(path)) && moved[location.hash] &&
+        !document.getElementById(location.hash.slice(1))) {
+      location.replace(moved[location.hash]);
+      return;
     }
 
     /* Footer year */
