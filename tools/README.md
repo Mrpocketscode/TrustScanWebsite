@@ -11,3 +11,6 @@ To change wording, edit `source-index.html` (or the small pages inside `build_si
 
 Keep the site free of inline `<script>`, `style=""` and third-party files: Cloudflare sends a strict
 Content-Security-Policy and Cross-Origin-Embedder-Policy, and anything inline or external is blocked.
+
+The build adds a version stamp to `styles.css` and `script.js` (`?v=...`), so always re-run the build after
+editing either file. Otherwise visitors may keep seeing the old styling for a while.
